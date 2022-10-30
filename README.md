@@ -5,7 +5,36 @@ The repo was created with `init.sh`.
 
 ## renv::init()
 
-"~/.cache/R/renv" here it created a file *projects** that contains path of project where renv were init I assume
+"~/.cache/R/renv" here it created a file *projects** that contains path of project where `renv::init` were called (I assume). 
+
+``` bash
+/my/place/.cache/R/renv
+├── cache
+│   └── v5
+│       └── R-4.2
+├── projects
+└── source
+    └── repository
+        ├── class
+        ├── classInt
+        ├── cpp11
+        ├── DBI
+        ├── e1071
+        ├── generics
+        ├── KernSmooth
+        ├── lubridate
+        ├── magrittr
+        ├── MASS
+        ├── proxy
+        ├── Rcpp
+        ├── s2
+        ├── sf
+        ├── units
+        └── wk
+
+```
+
+`
   
 It used the `.` of the file (testing_renv.R) to create `renv/` (here src/R/testing_renv.R). I guess it is probably better to have it at the root of the project. 
 
