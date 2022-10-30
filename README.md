@@ -1,10 +1,15 @@
-# renv::init()
+
+This is a minimal repo to test ``{renv}` 
+
+The repo was created with `init.sh`.
+
+## renv::init()
 
 "~/.cache/R/renv" here it created a file *projects** that contains path of project where renv were init I assume
   
 It used the `.` of the file (testing_renv.R) to create `renv/` (here src/R/testing_renv.R). I guess it is probably better to have it at the root of the project. 
 
-
+``` bash
 src/R/renv
 ├── activate.R
 ├── library
@@ -48,8 +53,13 @@ src/R/renv
 │               └── utils -> /usr/lib/R/library/utils
 └── settings.dcf
 
+```
+
 `vignette("renv")` provide an in depth description, see for more details the "infrastructure" part. Other intersting part is "futur work" with integration of `{pak}` and `{sysreqsdb}` 
 
 Activate is called via `source("renv/activate.R")` in `.Rprofile.`
 
+## renv::snapchot()
+
+I also said yes!
 
